@@ -345,6 +345,16 @@
                     </div>
                     <!-- end experience item -->
 
+		    <!-- experience item -->
+                    <div class="col-section">
+                        <p class="bg-colored">2024</p>
+                        <h3>Emotion-Based Book Recommendation System</h3>
+                        <p class="text-red">Machine Learning</p>
+                        <p>Python</p>
+                        <p>Developed an Emotion-Based Book Recommendation System designed to enhance personalized reading experiences by analyzing user emotions. The system utilizes camera-based facial recognition and text-based sentiment analysis to assess the user's emotional state in real time. By leveraging machine learning algorithms, it recommends books that align with the user's current mood, providing a tailored and engaging reading experience. This dual approach of emotion detection not only personalizes recommendations but also enriches user satisfaction, making the process of choosing books more intuitive and emotionally connected.</p>
+                    </div>
+                    <!-- end experience item -->
+
                 </div>
             </div>
             <div class="row px-3 px-sm-0 justify-content-center">
@@ -430,67 +440,163 @@
         Portfolio Section
         ==================================== -->
     <section id="portfolio">
-    <div class="container px-2 py-5">
-
-        <!-- section heading-->
-        <div class="heading mb-5 mb-xl-0">
-            <div class="heading-back-layer">
-                <h2>PORTFOLIO</h2>
+        <div class="container px-2 py-5">
+            <!-- section heading-->
+            <div class="heading mb-5 mb-xl-0">
+                <div class="heading-back-layer">
+                    <h2>PORTFOLIO</h2>
+                </div>
+                <p>My Work</p>
+                <div class="under-line"></div>
             </div>
-            <p>My Work</p>
-            <div class="under-line"></div>
-        </div>
-        <!-- end section heading-->
-        <div class="row px-3 px-sm-0 justify-content-center">
+            <!-- end section heading-->
+            
+            <div class="portfolio-grid">
+                <!-- Portfolio Item 1 -->
+                <div class="portfolio-item">
+                    <div class="portfolio-card">
+                        <div class="iframe-container">
+                            <iframe src="https://codeviaje.in" loading="lazy"></iframe>
+                        </div>
+                        <div class="portfolio-info">
+                            <h3>CodeViaje Website</h3>
+                            <a href="https://codeviaje.in" target="_blank" class="portfolio-link">
+                                Visit Site <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
 
-            <div class="col-md-6 ps-md-4">
-                <center>
-                    <div class="iframe-container">
-                        <a href="https://codeviaje.in" target="_blank">
-                            <iframe src="https://codeviaje.in"></iframe>
-                            CodeViaje Website 
-                        </a>
+                <!-- Portfolio Item 2 -->
+                <div class="portfolio-item">
+                    <div class="portfolio-card">
+                        <div class="iframe-container">
+                            <iframe src="https://nwrp.netlify.app" loading="lazy"></iframe>
+                        </div>
+                        <div class="portfolio-info">
+                            <h3>New World Roleplay</h3>
+                            <a href="https://nwrp.netlify.app" target="_blank" class="portfolio-link">
+                                Visit Site <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
                     </div>
-                    <div class="iframe-container">
-                        <a href="https://nwrp.netlify.app" target="_blank">
-                            <iframe src="https://nwrp.netlify.app"></iframe>
-                            New World Roleplay
-                        </a>
+                </div>
+
+                <!-- Portfolio Item 3 -->
+                <div class="portfolio-item">
+                    <div class="portfolio-card">
+                        <div class="iframe-container">
+                            <iframe src="http://karunadurp.in/" loading="lazy"></iframe>
+                        </div>
+                        <div class="portfolio-info">
+                            <h3>Karunadu Roleplay</h3>
+                            <a href="http://karunadurp.in/" target="_blank" class="portfolio-link">
+                                Visit Site <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
                     </div>
-                </center>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<style>
-    .iframe-container {
-        position: relative;
-        width: 100%;
-        padding-bottom: 56.25%; /* 16:9 aspect ratio */
-        margin-bottom: 20px;
-    }
-    
-    .iframe-container iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        border: 0;
-    }
-    
-    .iframe-container a {
-        display: block;
-        margin-top: 10px;
-    }
-
-    @media (max-width: 768px) {
-        .iframe-container {
-            padding-bottom: 75%; /* 4:3 aspect ratio for smaller screens */
+    <style>
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 1rem;
         }
-    }
-</style>
+
+        .portfolio-item {
+            transition: transform 0.3s ease;
+        }
+
+        .portfolio-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .portfolio-card {
+            background: #ffffff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .portfolio-card:hover {
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .iframe-container {
+            position: relative;
+            width: 100%;
+            padding-top: 56.25%; /* 16:9 Aspect Ratio */
+            background: #f5f5f5;
+            overflow: hidden;
+        }
+
+        .iframe-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+            transition: all 0.3s ease;
+        }
+
+        .portfolio-info {
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .portfolio-info h3 {
+            margin: 0 0 1rem 0;
+            font-size: 1.2rem;
+            color: #333;
+        }
+
+        .portfolio-link {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+
+        .portfolio-link:hover {
+            background: #0056b3;
+            color: white;
+        }
+
+        .portfolio-link i {
+            margin-left: 0.5rem;
+        }
+
+        @media (max-width: 768px) {
+            .portfolio-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+            
+            .portfolio-info h3 {
+                font-size: 1.1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .portfolio-grid {
+                padding: 0.5rem;
+            }
+            
+            .portfolio-info {
+                padding: 1rem;
+            }
+        }
+    </style>
 
     <!--
         End Portfolio Section
